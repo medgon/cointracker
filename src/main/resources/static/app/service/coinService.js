@@ -2,15 +2,12 @@ angular.module('app').service('coinService', function($http) {
 	
 	var coinService = {
 			
-			coinList: [];
-			
-			
-			getAllCoins: function(callback){
+			getAllCoins: function(cbSuccess, cbError){
 				return $http.get('https://bittrex.com/api/v1.1/public/getmarkets')
 						.then( function success(response){ 
-							coinService.coinList = response.data;
-							callback(response.data);
+							cbSuccess(response.data);
 						}, function error(){
+							cbError();
 							console.log("Error!");
 						});
 			},

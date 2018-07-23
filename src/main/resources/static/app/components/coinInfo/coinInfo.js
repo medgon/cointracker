@@ -3,30 +3,27 @@
 	angular.module('app').component('coinInfo', {
 		templateUrl: '/cointracker/app/components/coinInfo/coinInfo.html', 
 		controller: CoinController; 
-		binding: {
-			coin: '<'
-		}
 	});
 	
-	function CoinController(coinService){
-		coinService.getAllCoins(function(data){
+	function CoinController(coinService) { 
+
+		this.getCoins = function(){
+
+				coinService.getAllCoins(function(data){
+					
+					this.coin = data;
+					console.log(this.coin);
+
+				}.bind(this));
+
+			}
 			
-		}){
-			
+			this.init = function(){
+	            this.getCoins();
+			};
+
+			this.init();
 		}
-	}
 	
-/*	function HeaderController() { 
-		
-		var getCurrentUserContext = function(){
-			//add code here to determine the menu options rendered to the user based on the user roles and permissions
-		};
-		
-		this.init = function(){
-			getCurrentUserContext();
-		};
-		
-		this.init();
-	}*/
 	
 })(window.angular);	

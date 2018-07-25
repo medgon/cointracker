@@ -2307,3 +2307,84 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-07-23 15:06:59.714  INFO 83792 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/cointracker]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-07-23 15:06:59.714  INFO 83792 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-07-23 15:06:59.743  INFO 83792 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-07-25 15:21:39.437  INFO 86864 --- [main] c.d.cointracker.CointrackerApplication   : Starting CointrackerApplication on CoS-DO-MinhL with PID 86864 (C:\Users\mly8\git\cointracker\target\classes started by mly8 in C:\Users\mly8\git\cointracker)
+2018-07-25 15:21:39.439  INFO 86864 --- [main] c.d.cointracker.CointrackerApplication   : No active profile set, falling back to default profiles: default
+2018-07-25 15:21:39.486  INFO 86864 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@197d671: startup date [Wed Jul 25 15:21:39 EDT 2018]; root of context hierarchy
+2018-07-25 15:21:40.407  INFO 86864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96f82fa8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 15:21:40.813  INFO 86864 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-25 15:21:40.828  INFO 86864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-25 15:21:40.830  INFO 86864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-07-25 15:21:40.981  INFO 86864 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/cointracker]   : Initializing Spring embedded WebApplicationContext
+2018-07-25 15:21:40.987  INFO 86864 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1504 ms
+2018-07-25 15:21:41.140  INFO 86864 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-25 15:21:41.144  INFO 86864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-25 15:21:41.144  INFO 86864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-25 15:21:41.150  INFO 86864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-25 15:21:41.151  INFO 86864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-25 15:21:41.662  INFO 86864 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-25 15:21:41.676  INFO 86864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-25 15:21:41.762  INFO 86864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-07-25 15:21:41.764  INFO 86864 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-07-25 15:21:41.765  INFO 86864 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-07-25 15:21:41.808  INFO 86864 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-07-25 15:21:42.013  INFO 86864 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-07-25 15:21:42.056  INFO 86864 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2018-07-25 15:21:42.244  INFO 86864 --- [main] org.hibernate.search.engine.Version      : HSEARCH000034: Hibernate Search 5.6.4.Final
+2018-07-25 15:21:42.249  INFO 86864 --- [main] o.h.tool.hbm2ddl.SchemaValidator         : HHH000229: Running schema validator
+2018-07-25 15:21:42.346  INFO 86864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-07-25 15:21:42.358  INFO 86864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-07-25 15:21:42.364  INFO 86864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'getAsyncExecutor'
+2018-07-25 15:21:42.617  INFO 86864 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@197d671: startup date [Wed Jul 25 15:21:39 EDT 2018]; root of context hierarchy
+2018-07-25 15:21:42.691  INFO 86864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-25 15:21:42.693  INFO 86864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-25 15:21:42.719  INFO 86864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 15:21:42.719  INFO 86864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 15:21:42.763  INFO 86864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 15:21:42.786  INFO 86864 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-25 15:21:43.031  INFO 86864 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-25 15:21:43.103  INFO 86864 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-25 15:21:43.116  INFO 86864 --- [main] c.d.cointracker.CointrackerApplication   : Started CointrackerApplication in 3.954 seconds (JVM running for 4.503)
+2018-07-25 15:22:03.001  INFO 86864 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/cointracker]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-25 15:22:03.002  INFO 86864 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-25 15:22:03.033  INFO 86864 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-07-25 16:01:43.311  INFO 89260 --- [main] c.d.cointracker.CointrackerApplication   : Starting CointrackerApplication on CoS-DO-MinhL with PID 89260 (C:\Users\mly8\git\cointracker\target\classes started by mly8 in C:\Users\mly8\git\cointracker)
+2018-07-25 16:01:43.314  INFO 89260 --- [main] c.d.cointracker.CointrackerApplication   : No active profile set, falling back to default profiles: default
+2018-07-25 16:01:43.374  INFO 89260 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7486b455: startup date [Wed Jul 25 16:01:43 EDT 2018]; root of context hierarchy
+2018-07-25 16:01:44.371  INFO 89260 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5deb1895] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 16:01:44.859  INFO 89260 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-25 16:01:44.875  INFO 89260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-25 16:01:44.877  INFO 89260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-07-25 16:01:45.057  INFO 89260 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/cointracker]   : Initializing Spring embedded WebApplicationContext
+2018-07-25 16:01:45.062  INFO 89260 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1692 ms
+2018-07-25 16:01:45.245  INFO 89260 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-25 16:01:45.249  INFO 89260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-25 16:01:45.249  INFO 89260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-25 16:01:45.254  INFO 89260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-25 16:01:45.257  INFO 89260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-25 16:01:45.872  INFO 89260 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-25 16:01:45.892  INFO 89260 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-25 16:01:46.020  INFO 89260 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-07-25 16:01:46.022  INFO 89260 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-07-25 16:01:46.024  INFO 89260 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-07-25 16:01:46.081  INFO 89260 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-07-25 16:01:46.333  INFO 89260 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-07-25 16:01:46.384  INFO 89260 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2018-07-25 16:01:46.596  INFO 89260 --- [main] org.hibernate.search.engine.Version      : HSEARCH000034: Hibernate Search 5.6.4.Final
+2018-07-25 16:01:46.602  INFO 89260 --- [main] o.h.tool.hbm2ddl.SchemaValidator         : HHH000229: Running schema validator
+2018-07-25 16:01:46.727  INFO 89260 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-07-25 16:01:46.742  INFO 89260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-07-25 16:01:46.751  INFO 89260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'getAsyncExecutor'
+2018-07-25 16:01:47.149  INFO 89260 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7486b455: startup date [Wed Jul 25 16:01:43 EDT 2018]; root of context hierarchy
+2018-07-25 16:01:47.288  INFO 89260 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-25 16:01:47.293  INFO 89260 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-25 16:01:47.351  INFO 89260 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 16:01:47.351  INFO 89260 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 16:01:47.417  INFO 89260 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 16:01:47.447  INFO 89260 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-07-25 16:01:47.881  INFO 89260 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-25 16:01:47.973  INFO 89260 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-25 16:01:48.020  INFO 89260 --- [main] c.d.cointracker.CointrackerApplication   : Started CointrackerApplication in 4.992 seconds (JVM running for 5.653)

@@ -10,7 +10,6 @@
 		this.getCoins = function(){
 
 				coinService.getAllCoins(function(data){
-					
 					this.coin = data;
 					console.log(this.coin);
 
